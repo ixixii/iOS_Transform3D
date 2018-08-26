@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="naL-OY-Ita" userLabel="1pixv">
+                                <rect key="frame" x="187" y="0.0" width="1" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="dJ3-3U-rvm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="803-VQ-vKT" userLabel="1pix">
+                                <rect key="frame" x="0.0" y="333" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="aWC-AH-sb5"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="numberimg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ny3-C5-2I4">
+                                <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1hc-lg-iqW"/>
+                                    <constraint firstAttribute="height" constant="240" id="2UW-tT-omN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86Q-tu-3Kq">
+                                <rect key="frame" x="136.5" y="503" width="101" height="30"/>
+                                <state key="normal" title="jumpToNextVC"/>
+                                <connections>
+                                    <action selector="jumpToNextVCBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzf-Db-jyp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.9294428567651819" blue="0.94929404535174511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="803-VQ-vKT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6vc-qe-7cQ"/>
+                            <constraint firstItem="naL-OY-Ita" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7rE-VG-0co"/>
+                            <constraint firstItem="86Q-tu-3Kq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S0X-cl-I0a"/>
+                            <constraint firstItem="Ny3-C5-2I4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="S4Q-zj-d7q"/>
+                            <constraint firstAttribute="bottom" secondItem="naL-OY-Ita" secondAttribute="bottom" id="TbA-Lh-fUs"/>
+                            <constraint firstAttribute="trailing" secondItem="803-VQ-vKT" secondAttribute="trailing" id="WbV-Bi-BfD"/>
+                            <constraint firstItem="naL-OY-Ita" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bQn-V1-WG3"/>
+                            <constraint firstItem="803-VQ-vKT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eFm-q4-VB2"/>
+                            <constraint firstItem="naL-OY-Ita" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mrD-Qg-TZa"/>
+                            <constraint firstItem="86Q-tu-3Kq" firstAttribute="top" secondItem="Ny3-C5-2I4" secondAttribute="bottom" constant="50" id="nMg-GP-IeD"/>
+                            <constraint firstItem="Ny3-C5-2I4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wu3-UF-5lD"/>
+                            <constraint firstItem="803-VQ-vKT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zkI-Lf-b2j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorImgView" destination="Ny3-C5-2I4" id="lDv-tq-tXb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="numberimg.png" width="494" height="494"/>
+    </resources>
+</document>
